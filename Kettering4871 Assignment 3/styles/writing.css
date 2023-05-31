@@ -226,6 +226,15 @@ footer {
       padding-right: 20px;
 
     }
+
+    #sidebar1 a {
+      color: #020202;
+      text-decoration: none;
+      padding: 8px 75px; /* Adjust the padding size as desired */
+      border-radius: 4px;
+      background-color: #e6e8ff;
+      transition: background-color 0.3s ease;
+    }
   
     /* Add spacing between navigation items */
     #sidebar1 li {
@@ -297,3 +306,10 @@ footer {
   }
 
   
+
+  /* Hide the hamburger icon on desktop view */
+@media only screen and (min-width: 601px) {
+  .hamburger {
+    display: none;
+  }
+}

@@ -2,7 +2,7 @@
 /* Reset and basic styling */
 body {
   font: 100% Verdana, Arial, Helvetica, sans-serif;
-  background: rgb(198, 245, 172);
+  background: rgb(232, 242, 196);
   margin: 0;
   padding: 0;
   text-align: center;
@@ -19,6 +19,13 @@ body {
 }
 
 /* Sidebar styles */
+
+
+.navbar {
+  --bs-navbar-nav-link-padding-x: 4.5rem; /* Adjust the value as desired */
+}
+
+
 #sidebar1 {
     width: 100%;
     background: #cacdf9;
@@ -50,16 +57,19 @@ body {
   
   #sidebar1 a:hover {
     background-color: #d4d7ff;
+    color: black;
   }
   
   #sidebar1 a.active {
     background-color: #6b71ff;
     color: #ffffff;
   }
+  
 
 /* Main content styles */
 #mainContent {
   margin: 20px 0;
+  width: 100%;
 }
 
 /* Heading styles */
@@ -138,7 +148,7 @@ footer {
     align-items: flex-start;
   }
   
-  img {
+  #geraldpicture {
     width: 150px;
     height: 200px;
     border-radius: 50%;
@@ -217,6 +227,10 @@ footer {
     /* Adjusts the container width for mobile screens */
     #container {
       width: 90%;
+    }
+
+    body {
+      width: 100%;
     }
   
     /* Adjusts the navigation layout for mobile screens */

@@ -14,3 +14,9 @@
 H2, H3, p {
     text-align: center;
 }
+
+/* make the arrows black */
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}

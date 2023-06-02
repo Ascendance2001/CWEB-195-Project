@@ -27,23 +27,6 @@ body {
   /* Sidebar styles */
 
   
-.navbar {
-  --bs-navbar-nav-link-padding-x: 3.5rem; 
-}
-
-.navbar-brand {
-  margin-right: 25px;
-}
-
-.navbar-nav {
-  margin-left: 25px;
-}
-
-.navbar-collapse {
-  flex-basis: 100%;
-  align-items: center;
-  flex-grow: unset;
-}
 
 
   #sidebar1 {
@@ -116,7 +99,7 @@ body {
     list-style-type: none;
   }
   
-  li {
+  ul#bodyList  li {
     margin-top: 20px;
     margin-bottom: 25px;
   }

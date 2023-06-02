@@ -37,9 +37,7 @@ body {
 }
 
   /* Sidebar styles */
-  .navbar {
-    --bs-navbar-nav-link-padding-x: 3.5rem;
-  }
+
   
 
   #sidebar1 {
@@ -110,10 +108,7 @@ body {
     list-style-type: none;
   }
 
-  li {
-    margin-top: 20px;
-    margin-bottom: 25px;
-  }
+
 
   /* Paragraph styles */
   p {

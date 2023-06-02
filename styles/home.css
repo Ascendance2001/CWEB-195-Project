@@ -1,0 +1,30 @@
+
+
+h2, p {
+   width: 75%; 
+
+   margin-left: 13%;
+   margin-right: auto;
+}
+
+p {
+    padding: 1.5em;
+}
+
+#scrollToTop {
+    position: sticky;
+
+    right: 10px;
+    bottom: 10px;
+
+    width: 2em;
+
+    margin: 1em;
+
+    text-align: center;
+
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: green;
+}

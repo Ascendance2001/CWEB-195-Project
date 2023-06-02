@@ -1,0 +1,22 @@
+.carousel {
+    margin-top: 5%;
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+.w100 {
+    display: block;
+    height: 30%;
+}
+
+
+H2, H3, p {
+    text-align: center;
+}
+
+/* make the arrows black */
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}

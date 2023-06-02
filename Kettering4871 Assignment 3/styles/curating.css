@@ -21,13 +21,28 @@ body {
     background: beige;
     border: 1px solid #000000;
     text-align: center;
+    --bs-gutter-x: 1rem;
   }
   
   /* Sidebar styles */
 
   
 .navbar {
-  --bs-navbar-nav-link-padding-x: 4.5rem; /* Adjust the value as desired */
+  --bs-navbar-nav-link-padding-x: 3.5rem; 
+}
+
+.navbar-brand {
+  margin-right: 25px;
+}
+
+.navbar-nav {
+  margin-left: 25px;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  align-items: center;
+  flex-grow: unset;
 }
 
 
@@ -40,11 +55,12 @@ body {
     
     #sidebar1 ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       list-style-type: none;
       padding: 0;
       margin: 0;
+      gap: 10px;
     }
     
     #sidebar1 li {
@@ -323,6 +339,8 @@ body {
 
 @media (min-width: 992px) {
   .navbar-expand-lg {
-    flex-wrap: wrap !important;
+    flex-wrap: nowrap !important;
   }
 }
+
+

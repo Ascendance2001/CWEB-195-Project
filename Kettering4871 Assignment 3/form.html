@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://uregina.ca/~saulge/saul/">
+            <img src="images/UR_Logo.png" alt="Saul Gerald" height="40">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="films.html">Films</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="writing.html">Writing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="curating.html">Curating</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="artgallery.html">Art Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://uregina.ca/~saulge/saul/StudentsofGeraldSaul.htm">Students/Teaching</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="form.html">Form</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://uregina.ca/~saulge/saul/research_saul.htm">Research</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://uregina.ca/~saulge/saul/GeraldSaulCV.htm">About me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="form-area">
+          <h2>Photography Request Form</h2>
+          <p>Welcome to the contact form for requesting the use of Gerald Saul's photography work. Gerald Saul, an esteemed experimental photographer and faculty member at the University, has an extensive portfolio of captivating and thought-provoking images.</p>
+          <p>If you are interested in utilizing Gerald Saul's photography for a project, exhibition, publication, or any other purpose, please fill out the form below. Provide your name, email address, and a brief description of the reason for requesting Gerald Saul's work. We appreciate your interest and will review your request promptly.</p>
+          <p>Gerald Saul's unique perspective and artistic vision make his photography an excellent choice for various creative endeavors. We kindly ask that you provide a clear explanation of how you plan to use his work and any relevant details about your project.</p>
+          
+          <form id="contactForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+              <div class="invalid-feedback">Please enter your name</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+              <div class="invalid-feedback">Please enter a valid email address</div>
+            </div>
+            <div class="mb-3">
+              <label for="reason" class="form-label">Reason for requesting Gerald Saul's photography work</label>
+              <textarea class="form-control" id="reason" name="reason" rows="4" required></textarea>
+              <div class="invalid-feedback">Please provide a reason for using the photography work</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div id="footer-nav">
+          <ul>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li><a href="curating.html">Curating</a></li>
+            <li><a href="saul2008_solo_shows_main.html">Solo Shows</a></li>
+            <li><a href="artgallery.html">Art Galleries</a></li>
+            <li><a href="mailto:gerald.saul@uregina.ca">Contact</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="GeraldSaulCV.html">CV</a></li>
+        </ul>
+        </div>
+        <div id="subscribe">
+          <p>Subscribe to my newsletter:</p>
+          <form>
+            <input type="email" name="email" placeholder="Your email address" />
+            <input type="submit" value="Subscribe" />
+          </form>
+        </div>
+      </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Client-side form validation
+  (function () {
+  'use strict';
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation');
+
+  // Loop over each form and prevent submission
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+
+      form.classList.add('was-validated');
+    });
+
+    // Add event listener to each input field to remove validation errors on input
+    var inputFields = form.querySelectorAll('input, textarea');
+    Array.prototype.slice.call(inputFields).forEach(function (field) {
+      field.addEventListener('input', function () {
+        if (form.classList.contains('was-validated')) {
+          field.classList.remove('is-invalid');
+        }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
